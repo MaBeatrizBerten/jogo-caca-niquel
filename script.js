@@ -24,7 +24,8 @@ const symbols = [
 // Peso total calculado uma única vez
 const totalWeight = symbols.reduce((sum, s) => sum + s.weight, 0);
 
-let balance = 1000;
+let input = Number(prompt("Digite o valor do seu saldo inicial:"));
+let balance = isNaN(input) || input < 0 ? 1000 : input;
 let currentBet = 5;
 
 // --- 3. Funções Auxiliares ---
@@ -89,7 +90,10 @@ function spin() {
     });
 
     // Verifica vitória
-    if (results[0].name === results[1].name && results[1].name === results[2].name) {
+    if (
+      results[0].name === results[1].name &&
+      results[1].name === results[2].name
+    ) {
       const winnings = currentBet * results[0].payout;
       balance += winnings;
       setMessage(`GANHOU! Prémio: R$ ${winnings} 🎉`, "#4CAF50");
@@ -149,3 +153,4 @@ autoButton.addEventListener("click", () => {
 
 // Inicializa UI
 updateUI();
+if (balance <= 0) setMessage("Saldo insuficiente!", "red");
