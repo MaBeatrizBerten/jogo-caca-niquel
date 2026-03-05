@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caça-níquel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Caça-níquel</h1>
+      <div class="stats">
+        <p>Saldo: R$ <span id="balance">1000</span></p>
+        <p>Aposta: R$ <span id="current-bet">5</span></p>
+      </div>
+    </header>
+    <main>
+      <div class="slot-machine-container">
+        <div class="reel" id="reel1">❓</div>
+        <div class="reel" id="reel2">❓</div>
+        <div class="reel" id="reel3">❓</div>
+      </div>
+
+      <div class="controls">
+        <button id="bet-down" aria-label="Diminuir aposta">-</button>
+        <button id="bet-up" aria-label="Aumentar aposta">+</button>
+        <button id="spin-button">GIRAR 🎰</button>
+        <button id="auto-button">AUTO</button>
+      </div>
+
+      <h2 id="message">Tente a sua sorte!!!</h2>
+    </main>
+
+    <section class="payout-table">
+      <h3>Tabela de Prémios</h3>
+      <ul id="payout-list"></ul>
+    </section>
+
+    <footer class="rodape">
+      <p>Desenvolvido por Maria Beatriz Berten de Moraes</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
