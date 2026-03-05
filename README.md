@@ -37,6 +37,10 @@ Em vez de um sorteio totalmente aleatório, o programa soma o "peso" de todos os
 3. Dê um duplo clique no arquivo `index.html` para abri-lo no seu navegador padrão (Chrome, Edge, Firefox etc.).
 4. Ajuste sua aposta, clique em "GIRAR 🎰" e divirta-se!
 
+## 🌐 Acesse o projeto online
+
+🔗 https://jogo-caca-niquel.vercel.app/
+
 ## 👩‍💻 Autoria
 
 Desenvolvido por **Maria Beatriz Berten de Moraes**.
